@@ -7,7 +7,6 @@ import java.util.Random;
 public class SimpleSequenceRule implements NumberGenerationRule {
 
     private static final int UPPER_BOUND = 10000;
-    private static final int LOWER_BOUND = -10000;
     private final Random random;
 
     public SimpleSequenceRule() {
@@ -21,6 +20,6 @@ public class SimpleSequenceRule implements NumberGenerationRule {
 
     @Override
     public int next() {
-        return random.nextInt(UPPER_BOUND);
+        return random.nextInt(UPPER_BOUND + UPPER_BOUND) - UPPER_BOUND;
     }
 }

@@ -17,7 +17,7 @@ public class FormatPool {
     }
 
     public static DistinctRule getDistinctRuleByKey(String key) {
-        if(key.equals("distinct")) {
+        if("distinct".equals(key)) {
             return new DistinctRuleImpl();
         }
         return new DistinctRule() {
