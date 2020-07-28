@@ -1,6 +1,6 @@
 # Запуск
 Пример аргументов.
-test.txt 3123 odd&&positive::distinct::asc positive::desc
+test.txt 3123 odd&&positive::file2.txt::distinct::asc positive::name_file.txt::!::desc
 
 Самым первым идёт название, куда генерируются числа (в данном примере test.txt).
 Далее количество чисел (в данном примере 3123).
